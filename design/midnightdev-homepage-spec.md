@@ -1,0 +1,201 @@
+# Midnight Dev Studio — Homepage Specification
+
+**Version:** 0.1
+**Domain:** [midnightdev.studio](https://midnightdev.studio) (Cloudflare)
+**Updated:** May 2026
+
+---
+
+## 1. Overview
+
+The Midnight Dev Studio homepage is a professional portfolio showcase for Mychal Chin — Solutions Architect and Technical Lead. The site serves two audiences: hiring managers evaluating technical credibility, and potential clients assessing fit for project work.
+
+The site is static — no backend, no user accounts. It links out to live portfolio apps and public GitHub repositories.
+
+---
+
+## 2. Brand & Tone
+
+**Name:** Midnight Dev Studio
+
+**Tone:** Clean, professional, quietly confident. "Midnight" represents calm focus and productive stillness — the hours when good work gets done. Not moody or dramatic. Not generic corporate either.
+
+**Visual direction:**
+- Clean layout with generous whitespace
+- Subtle nods to the midnight theme — deep navy or near-black accents, not full dark mode
+- Typography-forward — let the content breathe
+- Fun without being unprofessional — personality shows through writing and details, not gimmicks
+
+---
+
+## 3. Target Audience
+
+**Primary:**
+- **Hiring managers** — evaluating technical skills, project depth, and professional credibility
+- **Potential clients** — assessing what has been built, that it works, and whether this is someone they can trust with a project
+
+Both audiences are served by the same content — polished live projects speak to clients, technical depth and architecture decisions speak to hiring managers.
+
+---
+
+## 4. Positioning
+
+**Mychal Chin — Solutions Architect / Technical Lead**
+
+Someone who designs systems, leads delivery, and builds things that work. 25+ years of professional experience including enterprise software, customer implementations, and technical leadership. Currently building a modern full-stack portfolio spanning Node.js, React, Python, PostgreSQL, and AI integrations.
+
+---
+
+## 5. Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Markup | HTML5 |
+| Styles | CSS3 (no framework — hand-rolled) |
+| Interactivity | Vanilla JavaScript |
+| Hosting | DigitalOcean via Coolify |
+| DNS / Edge | Cloudflare |
+
+No React. No build step required. Fast, simple, deployable anywhere.
+
+**Future consideration:** Astro — static site framework, zero JS by default, growing industry traction. Worth evaluating for v2.
+
+---
+
+## 6. Site Sections
+
+### 6.1 Hero
+
+The first thing a visitor sees. Should load instantly and communicate clearly within 5 seconds.
+
+**Content:**
+- Name and title — Mychal Chin, Solutions Architect / Technical Lead
+- One-line positioning statement — what you do and who you do it for
+- Two CTAs — "View Projects" (scrolls down) and "Get in Touch" (scrolls to contact)
+
+**Tone:** Confident and direct. No buzzword soup.
+
+---
+
+### 6.2 Live Projects
+
+Showcase of deployed, working applications. Each project gets a card containing:
+
+- Project name and tagline
+- Brief description (2-3 sentences max)
+- Tech stack tags
+- Link to live app
+- Link to public GitHub repo (where applicable)
+- **"What's Next" teaser** — 2-3 bullet points of near-term planned updates, framed as a short roadmap
+
+**Live Projects:**
+
+| Project | URL | Repo |
+|---|---|---|
+| Nomacle | nomacle.midnightdev.studio | Private |
+| Hangman Word Game | wordgame.midnightdev.studio | TBD |
+
+---
+
+### 6.3 Coming Soon
+
+Pipeline projects that are in active development or planned. Signals momentum and breadth to both hiring managers and clients.
+
+Each entry includes:
+- Project name
+- One-line description
+- Status indicator (In Development / Planned)
+
+**Pipeline projects to feature:**
+- Auth Service — shared JWT authentication service
+- Sports Analytics — NBA/NFL data pipelines and dashboards
+- Restaurant QA Suite — Python test suite for API and end-to-end testing
+- API Integration Hub — multi-API aggregation service
+- Log Analysis CLI — Python server log analysis tool
+
+---
+
+### 6.4 Skills & Stack
+
+A honest, scannable representation of technical skills. Not an exhaustive list — focused on what's relevant to the target audience.
+
+**Categories:**
+- Languages — JavaScript/TypeScript, Python, PHP, SQL
+- Frontend — React, HTML5, CSS3, Tailwind CSS, shadcn/ui
+- Backend — Node.js, Express
+- Databases — PostgreSQL (pgvector), MySQL, SQLite
+- Infrastructure — Docker, AWS (ECS, ECR, RDS, Secrets Manager), Terraform, GitHub Actions
+- AI/APIs — OpenAI API, Claude API, Google Places API
+- Testing — Jest, Supertest, Cucumber, Playwright, pytest
+- Tools — Git, Cloudflare, Coolify, Grafana
+
+**Note:** Distinguish actively used skills from skills in progress where appropriate.
+
+---
+
+### 6.5 About
+
+A brief, human section. Not a resume — a person.
+
+**Content:**
+- Short bio — 25+ years building enterprise software, professional services leadership, now building a modern full-stack portfolio under Midnight Dev Studio
+- What drives the work — solving real problems, clean architecture, shipping things that actually work
+- Current focus — modern full-stack development, AI integrations, portfolio projects
+
+**Tone:** First person, direct, no corporate speak.
+
+---
+
+### 6.6 Contact
+
+Simple and low-friction.
+
+**Content:**
+- Brief invitation — open to full-time roles, contract work, and interesting projects
+- Email link
+- LinkedIn link
+- GitHub link
+
+No contact form for now — mailto link is sufficient for a static site.
+
+---
+
+## 7. Navigation
+
+Sticky top navigation with smooth scroll to each section:
+
+```
+Midnight Dev Studio    Projects    Coming Soon    Skills    About    Contact
+```
+
+Mobile-friendly — collapses to a hamburger menu on small screens.
+
+---
+
+## 8. Performance & SEO
+
+- No external dependencies where possible — no jQuery, no heavy libraries
+- Optimized images — WebP format, lazy loading
+- Meta tags — title, description, Open Graph for link previews
+- Semantic HTML — proper heading hierarchy, landmark elements
+- Fast load target — under 1 second on a decent connection
+
+---
+
+## 9. Hosting & Deployment
+
+- Deployed via Coolify on DigitalOcean
+- DNS managed via Cloudflare
+- No CI/CD required initially — manual deploy is fine for a static site
+- Future: GitHub Actions for auto-deploy on push to main
+
+---
+
+## 10. Open Questions
+
+- Final one-line positioning statement — to be written
+- About section copy — to be written
+- Hangman repo — public or private?
+- Color palette — deep navy + white + one accent color TBD
+- Font pairing — to be selected
+- Domain email — contact@midnightdev.studio or personal email?
