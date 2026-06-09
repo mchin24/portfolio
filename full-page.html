@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midnight Dev Studio — Mychal Chin</title>
+  <meta name="description" content="Solutions Architect and Technical Lead. Building modern full-stack applications.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Midnight Dev Studio">
+  <meta property="og:description" content="Solutions Architect and Technical Lead. Building modern full-stack applications.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://midnightdev.studio">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAV
+       ============================================================ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo" aria-label="Midnight Dev Studio — home">
+        <svg class="nav-emblem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="20" cy="20" r="18" fill="none" stroke="white" stroke-width="1.4"/>
+          <circle cx="20" cy="20" r="12" fill="none" stroke="white" stroke-width="0.6" opacity="0.45"/>
+          <line x1="20" y1="19" x2="20" y2="6" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+          <line x1="20" y1="19" x2="20" y2="8.5" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M27,13 a7,7 0 0,1 0,14 a5,5 0 0,0 0,-14 z" fill="white"/>
+          <circle cx="6.5" cy="20" r="1.1" fill="white"/>
+          <circle cx="20" cy="33.5" r="1.1" fill="white"/>
+          <path d="M36.5,33 L37.5,31.5 L38.5,33 L37,34.5 Z" fill="white" opacity="0.55"/>
+        </svg>
+        <span class="nav-logo-wordmark">
+          <span class="nav-logo-name">midnight</span>
+          <span class="nav-logo-sub">dev studio</span>
+        </span>
+      </a>
+
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#coming-soon">Coming Soon</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero" id="hero" aria-label="Introduction">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-bg-glow hero-bg-glow--1"></div>
+      <div class="hero-bg-glow hero-bg-glow--2"></div>
+      <div class="hero-bg-glow hero-bg-glow--3"></div>
+      <div class="hero-bg-desk" aria-hidden="true">
+        <!-- Stylised desk/monitor scene -->
+        <svg class="desk-svg" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <!-- monitor stand -->
+          <rect x="265" y="310" width="70" height="10" rx="4" fill="rgba(255,255,255,0.06)"/>
+          <rect x="285" y="320" width="30" height="50" rx="3" fill="rgba(255,255,255,0.05)"/>
+          <!-- monitor body -->
+          <rect x="100" y="80" width="400" height="230" rx="12" fill="rgba(15,21,40,0.9)" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+          <!-- monitor screen inner glow -->
+          <rect x="112" y="92" width="376" height="206" rx="6" fill="url(#screenGrad)"/>
+          <!-- screen content suggestion -->
+          <rect x="125" y="110" width="180" height="8" rx="3" fill="rgba(255,255,255,0.08)"/>
+          <rect x="125" y="125" width="130" height="6" rx="3" fill="rgba(255,255,255,0.05)"/>
+          <rect x="125" y="155" width="240" height="4" rx="2" fill="rgba(255,255,255,0.04)"/>
+          <rect x="125" y="167" width="200" height="4" rx="2" fill="rgba(255,255,255,0.04)"/>
+          <rect x="125" y="179" width="220" height="4" rx="2" fill="rgba(255,255,255,0.04)"/>
+          <!-- code-like lines right panel -->
+          <rect x="380" y="110" width="95" height="4" rx="2" fill="rgba(100,160,255,0.15)"/>
+          <rect x="380" y="122" width="60" height="4" rx="2" fill="rgba(100,200,150,0.12)"/>
+          <rect x="380" y="134" width="80" height="4" rx="2" fill="rgba(100,160,255,0.1)"/>
+          <rect x="380" y="146" width="50" height="4" rx="2" fill="rgba(255,180,100,0.1)"/>
+          <rect x="380" y="158" width="90" height="4" rx="2" fill="rgba(100,160,255,0.12)"/>
+          <!-- keyboard -->
+          <rect x="150" y="375" width="300" height="70" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+          <!-- keyboard keys rows -->
+          <g fill="rgba(255,255,255,0.06)">
+            <rect x="162" y="385" width="18" height="12" rx="2"/>
+            <rect x="184" y="385" width="18" height="12" rx="2"/>
+            <rect x="206" y="385" width="18" height="12" rx="2"/>
+            <rect x="228" y="385" width="18" height="12" rx="2"/>
+            <rect x="250" y="385" width="18" height="12" rx="2"/>
+            <rect x="272" y="385" width="18" height="12" rx="2"/>
+            <rect x="294" y="385" width="18" height="12" rx="2"/>
+            <rect x="316" y="385" width="18" height="12" rx="2"/>
+            <rect x="338" y="385" width="18" height="12" rx="2"/>
+            <rect x="360" y="385" width="18" height="12" rx="2"/>
+            <rect x="162" y="401" width="18" height="12" rx="2"/>
+            <rect x="184" y="401" width="18" height="12" rx="2"/>
+            <rect x="206" y="401" width="18" height="12" rx="2"/>
+            <rect x="228" y="401" width="18" height="12" rx="2"/>
+            <rect x="250" y="401" width="18" height="12" rx="2"/>
+            <rect x="272" y="401" width="18" height="12" rx="2"/>
+            <rect x="294" y="401" width="18" height="12" rx="2"/>
+            <rect x="316" y="401" width="18" height="12" rx="2"/>
+            <rect x="338" y="401" width="18" height="12" rx="2"/>
+            <rect x="360" y="401" width="18" height="12" rx="2"/>
+            <rect x="200" y="417" width="200" height="12" rx="2"/>
+          </g>
+          <!-- moon top right -->
+          <path d="M530,45 a30,30 0 0,1 0,60 a22,22 0 0,0 0,-60 z" fill="rgba(220,230,255,0.12)"/>
+          <path d="M530,55 a20,20 0 0,1 0,40 a15,15 0 0,0 0,-40 z" fill="rgba(220,230,255,0.08)"/>
+          <!-- desk lamp glow -->
+          <ellipse cx="540" cy="180" rx="80" ry="60" fill="rgba(255,190,80,0.06)"/>
+          <!-- desk surface -->
+          <rect x="0" y="460" width="600" height="40" rx="0" fill="rgba(255,255,255,0.03)"/>
+
+          <defs>
+            <radialGradient id="screenGrad" cx="50%" cy="50%" r="55%">
+              <stop offset="0%" stop-color="rgba(40,70,160,0.35)"/>
+              <stop offset="100%" stop-color="rgba(10,15,40,0.6)"/>
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <p class="hero-label">Solutions Architect / Technical Lead</p>
+      <h1 class="hero-heading">
+        Building systems.<br>
+        Solving <em>real</em> problems.
+      </h1>
+      <p class="hero-body">
+        25+ years designing, leading, and shipping enterprise software
+      </p>
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+          View Projects
+        </a>
+        <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+
+    <!-- decorative clock emblem -->
+    <div class="hero-emblem" aria-hidden="true">
+      <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="18" fill="none" stroke="white" stroke-width="1.4"/>
+        <circle cx="20" cy="20" r="12" fill="none" stroke="white" stroke-width="0.6" opacity="0.45"/>
+        <line x1="20" y1="19" x2="20" y2="6" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+        <line x1="20" y1="19" x2="20" y2="8.5" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="M27,13 a7,7 0 0,1 0,14 a5,5 0 0,0 0,-14 z" fill="white"/>
+        <circle cx="6.5" cy="20" r="1.1" fill="white"/>
+        <circle cx="20" cy="33.5" r="1.1" fill="white"/>
+        <path d="M36.5,33 L37.5,31.5 L38.5,33 L37,34.5 Z" fill="white" opacity="0.55"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PROJECTS
+       ============================================================ -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Things I've built and shipped</h2>
+        <p class="section-subtitle">Real applications solving real problems. Deployed and in use.</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Nomacle -->
+        <article class="project-card">
+          <div class="project-card-top">
+            <div class="project-name-row">
+              <h3 class="project-name">Takeout</h3>
+              <a href="https://nomacle.midnightdev.studio" class="project-external" target="_blank" rel="noopener"
+                 aria-label="Visit Takeout live site">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <span class="badge badge-live">Live</span>
+            </div>
+            <p class="project-tagline">Digital Dinner Decider</p>
+          </div>
+
+          <p class="project-description">
+            Deciding what's for dinner can be the hardest decision of the day. Takeouet allows you to keep a list of
+	          your favorite restaurants and get suggestions on where to eat.
+          </p>
+
+          <div class="tech-tags">
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">React</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Google Places API</span>
+          </div>
+
+          <div class="project-whats-next">
+            <h4 class="whats-next-label">What's Next</h4>
+            <ul class="whats-next-list">
+              <li>User accounts with saved itineraries and trip history</li>
+              <li>Collaborative trip planning with real-time sharing</li>
+              <li>Google Flights API integration for live travel data</li>
+            </ul>
+          </div>
+
+          <div class="project-card-footer">
+            <a href="https://nomacle.midnightdev.studio" class="btn-link" target="_blank" rel="noopener">View Live Site →</a>
+            <a href="#" class="btn-link btn-link--dim">View Roadmap</a>
+          </div>
+        </article>
+
+        <!-- Hangman Word Game -->
+        <article class="project-card">
+          <div class="project-card-top">
+            <div class="project-name-row">
+              <h3 class="project-name">Hangman Word Game</h3>
+              <a href="https://wordgame.midnightdev.studio" class="project-external" target="_blank" rel="noopener" aria-label="Visit Hangman Word Game live site">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <span class="badge badge-live">Live</span>
+            </div>
+            <p class="project-tagline">Classic word game with multiple difficulty modes</p>
+          </div>
+
+          <p class="project-description">
+            Classic hangman with word categories, difficulty levels, and keyboard support. Built as a clean vanilla JS exercise — no dependencies, fast load, and fully accessible.
+          </p>
+
+          <div class="tech-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+          </div>
+
+          <div class="project-whats-next">
+            <h4 class="whats-next-label">What's Next</h4>
+            <ul class="whats-next-list">
+              <li>Difficulty selection and expanded word categories</li>
+              <li>Daily word challenge with shareable score results</li>
+              <li>Stats tracking and accessibility improvements</li>
+            </ul>
+          </div>
+
+          <div class="project-card-footer">
+            <a href="https://wordgame.midnightdev.studio" class="btn-link" target="_blank" rel="noopener">View Live Site →</a>
+            <a href="#" class="btn-link btn-link--dim">View Roadmap</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       COMING SOON
+       ============================================================ -->
+  <section class="section coming-soon" id="coming-soon">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">In the pipeline</h2>
+        <p class="section-subtitle">Active development and projects queued for build.</p>
+      </div>
+      <div class="pipeline-grid">
+
+        <div class="pipeline-item">
+          <div class="pipeline-item-header">
+            <h3 class="pipeline-name">Auth Service</h3>
+            <span class="badge badge-dev">In Development</span>
+          </div>
+          <p class="pipeline-desc">Shared JWT authentication service for portfolio applications</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS
+       ============================================================ -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Skills &amp; Stack</h2>
+        <p class="section-subtitle">What I reach for when building things.</p>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-group">
+          <h3 class="skill-group-label">Languages</h3>
+          <ul class="skill-list" role="list">
+            <li>JavaScript / TypeScript</li>
+            <li>Python</li>
+            <li>PHP</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-label">Frontend</h3>
+          <ul class="skill-list" role="list">
+            <li>HTML5</li>
+            <li>CSS3</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-label">Backend</h3>
+          <ul class="skill-list" role="list">
+            <li>Node.js</li>
+            <li>Express</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-label">Databases</h3>
+          <ul class="skill-list" role="list">
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-label">Infrastructure</h3>
+          <ul class="skill-list" role="list">
+            <li>Docker</li>
+            <li>AWS <span class="skill-note">ECS · S3 · RDS · Secrets Manager</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-label">Tools</h3>
+          <ul class="skill-list" role="list">
+            <li>Git</li>
+            <li>Cloudflare</li>
+            <li>Coolify</li>
+            <li>Grafana</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT
+       ============================================================ -->
+  <section class="section about" id="about">
+    <div class="about-bg" aria-hidden="true">
+      <div class="about-bg-glow"></div>
+    </div>
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title about-title">Built with focus.<br>Shipped with care.</h2>
+          <p class="about-body">
+            I'm Mike — a Solutions Architect and Technical Lead with 25+ years of experience designing, leading, and
+	          shipping enterprise software. I've worked across product development, professional services, and technical leadership — close enough to delivery to know when something actually works.
+          </p>
+          <p class="about-body">
+            Midnight Dev Studio is where I build my modern portfolio: Node.js, Python, PostgreSQL.
+          </p>
+          <p class="about-body">
+            I care about clean architecture, honest code, and software that behaves the way it should. One working project at a time.
+          </p>
+        </div>
+
+        <aside class="about-aside">
+          <div class="meet-card">
+            <div class="meet-avatar" aria-hidden="true">
+              <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" width="64" height="64">
+                <circle cx="32" cy="32" r="32" fill="#1a2240"/>
+                <circle cx="32" cy="26" r="12" fill="#2a3860"/>
+                <ellipse cx="32" cy="58" rx="20" ry="14" fill="#2a3860"/>
+              </svg>
+            </div>
+            <div class="meet-info">
+              <h3 class="meet-name">Mychal Chin</h3>
+              <p class="meet-role">Solutions Architect / Technical Lead</p>
+              <a href="https://linkedin.com/in/mychalchin" class="meet-link" target="_blank" rel="noopener">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT
+       ============================================================ -->
+  <section class="section contact" id="contact">
+    <div class="contact-bg" aria-hidden="true"></div>
+    <div class="container">
+      <div class="contact-split">
+        <div class="contact-main">
+          <h2 class="contact-heading">Let's build something great.</h2>
+          <p class="contact-body">Open to full-time roles, contract work, and interesting projects. For direct inquiries and scheduling:</p>
+          <ul class="contact-links" role="list">
+            <li>
+              <a href="https://linkedin.com/in/mychalchin" class="contact-link" target="_blank" rel="noopener">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                linkedin.com/in/mychalchin
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/mchin24" class="contact-link" target="_blank" rel="noopener">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                github.com/mchin24
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#" class="footer-logo" aria-label="Midnight Dev Studio — back to top">
+        <svg class="footer-emblem" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="20" cy="20" r="18" fill="none" stroke="white" stroke-width="1.4"/>
+          <circle cx="20" cy="20" r="12" fill="none" stroke="white" stroke-width="0.6" opacity="0.45"/>
+          <line x1="20" y1="19" x2="20" y2="6" stroke="white" stroke-width="1.4" stroke-linecap="round"/>
+          <line x1="20" y1="19" x2="20" y2="8.5" stroke="white" stroke-width="2.4" stroke-linecap="round"/>
+          <path d="M27,13 a7,7 0 0,1 0,14 a5,5 0 0,0 0,-14 z" fill="white"/>
+          <circle cx="6.5" cy="20" r="1.1" fill="white"/>
+          <circle cx="20" cy="33.5" r="1.1" fill="white"/>
+          <path d="M36.5,33 L37.5,31.5 L38.5,33 L37,34.5 Z" fill="white" opacity="0.55"/>
+        </svg>
+        <span class="footer-wordmark">
+          <span class="footer-name">midnight</span>
+          <span class="footer-sub">dev studio</span>
+        </span>
+      </a>
+      <p class="footer-copy">© 2026 Midnight Dev Studio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
