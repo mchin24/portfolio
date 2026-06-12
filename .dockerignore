@@ -2,3 +2,5 @@
 .idea
 design
 CLAUDE.md
+.gitignore
+SECURITY_CHECKLIST.md
