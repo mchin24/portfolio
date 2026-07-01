@@ -160,6 +160,33 @@ No contact form for now — mailto link is sufficient for a static site.
 
 ---
 
+## 6.7 Color Palette
+
+Deep navy base with a single warm accent — subtle nods to "midnight," not full dark mode. Values match the CSS custom properties in `css/styles.css`.
+
+| Swatch | Token | Hex / Value | Use |
+|---|---|---|---|
+| ![#080c18](https://placehold.co/40x20/080c18/080c18.png) | `--bg` | `#080c18` | Page background |
+| ![#0f1524](https://placehold.co/40x20/0f1524/0f1524.png) | `--surface` | `#0f1524` | Cards, sections |
+| ![#141d30](https://placehold.co/40x20/141d30/141d30.png) | `--surface-2` | `#141d30` | Nested/raised surfaces |
+| ![#1c2640](https://placehold.co/40x20/1c2640/1c2640.png) | `--surface-3` | `#1c2640` | Hover states, tertiary surfaces |
+| ![#eef2ff](https://placehold.co/40x20/eef2ff/eef2ff.png) | `--text` | `#eef2ff` | Primary text |
+| ![#7a8aaf](https://placehold.co/40x20/7a8aaf/7a8aaf.png) | `--text-muted` | `#7a8aaf` | Body copy, secondary text |
+| ![#3d4e72](https://placehold.co/40x20/3d4e72/3d4e72.png) | `--text-dim` | `#3d4e72` | Least prominent text (labels, meta) |
+| ![#e8613a](https://placehold.co/40x20/e8613a/e8613a.png) | `--accent` | `#e8613a` | Highlight / emphasis (warm orange) |
+| ![#3563e9](https://placehold.co/40x20/3563e9/3563e9.png) | `--primary` | `#3563e9` | CTAs, links (blue) |
+| ![#2550cc](https://placehold.co/40x20/2550cc/2550cc.png) | `--primary-h` | `#2550cc` | Primary hover state |
+| ![#22c55e](https://placehold.co/40x20/22c55e/22c55e.png) | `--green` | `#22c55e` | Status indicators (e.g. "Live") |
+| — | `--border` | `rgba(255, 255, 255, 0.07)` | Default borders (translucent white) |
+| — | `--border-h` | `rgba(255, 255, 255, 0.14)` | Hover borders (translucent white) |
+
+**Usage notes:**
+- Navy surfaces (`--bg` → `--surface-3`) establish depth without full dark-mode contrast.
+- `--accent` (orange) and `--primary` (blue) are the only saturated colors — reserved for CTAs, links, and emphasis so they stay meaningful.
+- `--green` is used sparingly, for status badges only (e.g. "Live" in Coming Soon).
+
+---
+
 ## 7. Navigation
 
 Sticky top navigation with smooth scroll to each section:
@@ -196,6 +223,5 @@ Mobile-friendly — collapses to a hamburger menu on small screens.
 - Final one-line positioning statement — to be written
 - About section copy — to be written
 - Hangman repo — public or private?
-- Color palette — deep navy + white + one accent color TBD
 - Font pairing — to be selected
 - Domain email — contact@midnightdev.studio or personal email?
