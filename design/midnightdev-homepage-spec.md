@@ -185,6 +185,16 @@ Deep navy base with a single warm accent — subtle nods to "midnight," not full
 - `--accent` (orange) and `--primary` (blue) are the only saturated colors — reserved for CTAs, links, and emphasis so they stay meaningful.
 - `--green` is used sparingly, for status badges only (e.g. "Live" in Coming Soon).
 
+## 6.8 Typography
+
+Single typeface, differentiated by weight rather than a heading/body pairing — keeps the type system simple and consistent with the "no framework, hand-rolled" approach.
+
+| Token | Value |
+|---|---|
+| `--font` | `'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif` |
+
+Weights in use range from 500 (medium, body/labels) to 800 (extra-bold, hero/emphasis headings).
+
 ---
 
 ## 7. Navigation
@@ -223,5 +233,4 @@ Mobile-friendly — collapses to a hamburger menu on small screens.
 - Final one-line positioning statement — to be written
 - About section copy — to be written
 - Hangman repo — public or private?
-- Font pairing — to be selected
 - Domain email — contact@midnightdev.studio or personal email?
